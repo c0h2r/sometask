@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "Overcomplicated ToDo"
+version = "0.1.0"
+description = "A todo webapp. 'Cause keeping things local isn't fascionable anymore, apparently."
+authors = ["Noone of consequence"]
+license = "WTFPL"
+packages = [
+  { include = "src/main.py" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+uvicorn = "^0.28.1"
+#fastapi = "^0.110.0"
+meilisearch = "^0.31.0"
+#pydantic = "1.7.4"
+#fastapi = "^0.104.1"
+fastapi = "^0.110.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.9"
+multipart = "^0.2.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
